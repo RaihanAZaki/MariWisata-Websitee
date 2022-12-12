@@ -10,5 +10,6 @@ class Wisata extends BaseController
             'title' => 'Wisata',
         ];
         return view('pages/wisata', $data);
+        // tes
     }
 }

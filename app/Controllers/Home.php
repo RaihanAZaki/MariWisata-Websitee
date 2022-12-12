@@ -9,7 +9,6 @@ class Home extends BaseController
         $data = [
             'title' => 'Home',
         ];
-
         return view('pages/home', $data);
     }
 }

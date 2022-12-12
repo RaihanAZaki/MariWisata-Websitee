@@ -5,7 +5,8 @@
             <nav class="relative flex items-center justify-between h-16 lg:h-20">
                 <div class="hidden lg:flex lg:items-center lg:space-x-10">
                     <a href="<?= base_url('/'); ?>" title="" class="text-base font-medium text-black"> Home </a>
-                    <a href="#" title="" class="text-base font-medium text-black group-hover:text-blue-400"> Wisata </a>
+                    <a href="/pages/wisata" title="" class="text-base font-medium text-black group-hover:text-blue-400">
+                        Wisata </a>
                     <a href="/pages/about" title="" class="text-base font-medium text-black"> About </a>
                 </div>
 

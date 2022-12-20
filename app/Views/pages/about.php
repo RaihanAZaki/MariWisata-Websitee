@@ -16,18 +16,98 @@
                 <p class="mt-4 text-xl text-gray-600 md:mt-8">
                     <span class="relative inline-block">
                         <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300"></span>
-                        <span class="relative"> Have a question? </span>
+                        <span class="relative"> Ada Pertanyaan? </span>
                     </span>
-                    <br class="block sm:hidden" />Ask me on <a href="#" title=""
-                        class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Contact
-                        Me</a>
+                    <br class="block sm:hidden" />Kirim pesan anda <a href="#" title="" data-modal-toggle="kirimPesan"
+                        class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">disini</a>
                 </p>
+
+                <!-- Main modal Start -->
+                <div id="kirimPesan" tabindex="-1" aria-hidden="true"
+                    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                    <div class="relative w-full h-full max-w-2xl md:h-auto">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    Kirim Pesan
+                                </h3>
+                                <button type="button"
+                                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                    data-modal-toggle="kirimPesan">
+                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="mt-6 overflow-hidden bg-white rounded-xl">
+                                <div class="px-6 py-12 sm:p-12">
+                                    <h3 class="text-3xl font-semibold text-center text-gray-900">Kirim Pesan Anda</h3>
+
+                                    <form action="#" method="POST" class="mt-14">
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
+                                            <div>
+                                                <label for="" class="text-base font-medium text-gray-900"> Nama </label>
+                                                <div class="mt-2.5 relative">
+                                                    <input type="text" name="" id="" placeholder="Masukan nama.."
+                                                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <label for="" class="text-base font-medium text-gray-900"> Email
+                                                </label>
+                                                <div class="mt-2.5 relative">
+                                                    <input type="email" name="" id="" placeholder="Masukan email.."
+                                                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <label for="" class="text-base font-medium text-gray-900"> Nomer Telfon
+                                                </label>
+                                                <div class="mt-2.5 relative">
+                                                    <input type="tel" name="" id="" placeholder="Masukan nomer telfon.."
+                                                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                                </div>
+                                            </div>
+
+                                            <div class="sm:col-span-2">
+                                                <label for="" class="text-base font-medium text-gray-900">
+                                                    Pesan </label>
+                                                <div class="mt-2.5 relative">
+                                                    <textarea name="" id="" placeholder=""
+                                                        class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blue-600 caret-blue-600"
+                                                        rows="4"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="sm:col-span-2">
+                                                <button type="submit"
+                                                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
+                                                    Kirim
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main modal End -->
             </div>
 
             <div class="relative">
                 <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
-
+                
                 <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
                     src="assets/img/team.png" alt="" />
             </div>

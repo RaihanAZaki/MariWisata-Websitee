@@ -4,10 +4,10 @@
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
             <nav class="relative flex items-center justify-between h-16 lg:h-20">
                 <div class="hidden lg:flex lg:items-center lg:space-x-10">
-                    <a href="<?= base_url('/'); ?>" title="" class="text-base font-medium text-black"> Home </a>
-                    <a href="/wisata" title="" class="text-base font-medium text-black group-hover:text-blue-400">
+                    <a href="<?= base_url('/'); ?>" title="Home" class="text-base font-medium text-black"> Home </a>
+                    <a href="/wisata" title="Wisata" class="text-base font-medium text-black group-hover:text-blue-400">
                         Wisata </a>
-                    <a href="/about" title="" class="text-base font-medium text-black"> About </a>
+                    <a href="/about" title="About" class="text-base font-medium text-black"> About </a>
                 </div>
 
                 <div class="lg:absolute lg:-translate-x-1/2 lg:inset-y-5 lg:left-1/2">
@@ -29,7 +29,7 @@
                 </button>
 
                 <div class="hidden lg:flex lg:items-center lg:space-x-10">
-                    <a href="#" title="" class="text-base font-medium text-black"> Sign in </a>
+                    <a href="/signIn" title="Sign In" class="text-base font-medium text-black"> Sign In </a>
                 </div>
             </nav>
         </div>
@@ -53,13 +53,13 @@
 
             <div class="mt-6">
                 <div class="flex flex-col space-y-2">
-                    <a href="#" title=""
+                    <a href="<?= base_url('/'); ?>" title="Home"
                         class="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600">
                         Home </a>
-                    <a href="#" title=""
+                    <a href="/wisata" title="Wisata"
                         class="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600">
                         Wisata </a>
-                    <a href="#" title=""
+                    <a href="/about" title="About"
                         class="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600">
                         About </a>
                 </div>
@@ -67,9 +67,9 @@
                 <hr class="my-4 border-gray-200" />
 
                 <div class="flex flex-col space-y-2">
-                    <a href="#" title=""
+                    <a href="/signIn" title="Sign In"
                         class="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600">
-                        Sign in </a>
+                        Sign In </a>
                 </div>
             </div>
         </div>

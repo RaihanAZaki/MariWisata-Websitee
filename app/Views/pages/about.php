@@ -8,10 +8,10 @@
         <div class="grid items-center grid-cols-1 md:grid-cols-2">
             <div>
                 <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Hey 👋 I am <br
-                        class="block sm:hidden" />Jenny Carter</h2>
-                <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Amet minim mollit non deserunt
-                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.</p>
+                        class="block sm:hidden" />Mari Wisata</h2>
+                <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Perkenalkan kami Raihan, Rizki,
+                    Rifqi, dan Edwin mahasiswa dari Universitas
+                    Pembangunan Jaya, program studi Informatika.</p>
 
                 <p class="mt-4 text-xl text-gray-600 md:mt-8">
                     <span class="relative inline-block">
@@ -19,7 +19,8 @@
                         <span class="relative"> Have a question? </span>
                     </span>
                     <br class="block sm:hidden" />Ask me on <a href="#" title=""
-                        class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Twitter</a>
+                        class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Contact
+                        Me</a>
                 </p>
             </div>
 
@@ -28,7 +29,7 @@
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
 
                 <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" />
+                    src="assets/img/team.png" alt="" />
             </div>
         </div>
     </div>
@@ -58,43 +59,6 @@
         </div>
     </div>
 </section>
-
-<!-- Chart Section Start -->
-<section>
-    <div class="shadow-lg rounded-lg overflow-hidden">
-        <div class="py-3 px-5 bg-gray-50">Line chart</div>
-        <canvas class="p-10" id="chartLine"></canvas>
-    </div>
-
-    <!-- Required chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- Chart line -->
-    <script>
-    const labels = ["January", "February", "March", "April", "May", "June"];
-    const data = {
-        labels: labels,
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: "hsl(252, 82.9%, 67.8%)",
-            borderColor: "hsl(252, 82.9%, 67.8%)",
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }, ],
-    };
-
-    const configLineChart = {
-        type: "line",
-        data,
-        options: {},
-    };
-
-    var chartLine = new Chart(
-        document.getElementById("chartLine"),
-        configLineChart
-    );
-    </script>
-</section>
-<!-- Chart Section End -->
 
 <section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">

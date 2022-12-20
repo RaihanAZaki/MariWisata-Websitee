@@ -39,6 +39,8 @@ $routes->setAutoRoute(true);
 $routes->get('/home', 'Home::index');
 $routes->get('/wisata', 'Wisata::index');
 $routes->get('/about', 'About::index');
+$routes->get('/signIn', 'SignIn::index');
+$routes->get('/signUp', 'SignUp::index');
 
 /*
  * --------------------------------------------------------------------

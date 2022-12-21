@@ -13,9 +13,7 @@ class ContactUs extends BaseController
         $data['title']     = 'Contact Us';
         $data['getContact'] = $model->getContact();
 
-        // echo view('header', $data);
-        // echo view('employee_view', $data);
-        // echo view('footer', $data);
+        return view('/about', $data);
     }
 
     public function add()
@@ -28,9 +26,9 @@ class ContactUs extends BaseController
             'message' => $this->request->getPost('message')
         );
         $model->saveContact($data);
-        echo '<script>
-                alert("Selamat! Berhasil Menambah Data Vaksinasi Karyawan");
-                window.location="' . base_url('contact-us') . '"
-            </script>';
+        // echo '<script>
+        //         alert("Selamat! Berhasil Menambah Data Vaksinasi Karyawan");
+        //         window.location="' . base_url('contact-us') . '"
+        //     </script>';
     }
 }

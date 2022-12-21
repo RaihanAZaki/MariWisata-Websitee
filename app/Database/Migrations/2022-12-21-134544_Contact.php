@@ -4,8 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class UpContact extends Migration
-{
+class Contact extends Migration {
     public function up()
     {
         $this->forge->addField([
@@ -31,20 +30,19 @@ class UpContact extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255'
             ],
+			'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);
 
         // Membuat primary key
         $this->forge->addKey('id', TRUE);
 
         // Membuat tabel karyawan
-        $this->forge->createTable('contact-us', TRUE);
+        $this->forge->createTable('contact', TRUE);
     }
-
-    //-------------------------------------------------------
 
     public function down()
     {
         // menghapus tabel karyawan
-        $this->forge->dropTable('contact-us');
+        $this->forge->dropTable('contact');
     }
 }

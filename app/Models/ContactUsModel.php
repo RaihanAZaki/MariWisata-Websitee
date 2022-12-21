@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ContactUsModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'contactus';
+    protected $table            = 'contact';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
@@ -39,4 +39,19 @@ class ContactUsModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    
+    public function getContact($id = false)
+    {
+        if ($id === false) {
+            return $this->findAll();
+        } else {
+            return $this->getWhere(['id' => $id]);
+        }
+    }
+
+    public function saveContact($data)
+    {
+        $builder = $this->db->table($this->table);
+        return $builder->insert($data);
+    }
 }

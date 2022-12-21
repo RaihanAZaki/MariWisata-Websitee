@@ -2,7 +2,6 @@
 
 <?= $this->section('content'); ?>
 
-
 <!-- Profile Section Start -->
 <section class="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -103,14 +102,12 @@
                     </div>
                 </div>
                 <!-- Main modal End -->
-
-
             </div>
 
             <div class="relative">
                 <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
-                
+
                 <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
                     src="assets/img/team.png" alt="" />
             </div>
@@ -124,20 +121,22 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
             <div>
-                <img class="w-full max-w-md mx-auto rounded-full"
-                    src="assets/element/109-map-location.png"
-                    alt="" />
+                <img class="w-full max-w-md mx-auto rounded-full" src="assets/element/109-map-location.png" alt="" />
             </div>
 
-            <div class="text-center lg:text-left">
+            <div class="text-left">
                 <span class="relative inline-block">
                     <span class="absolute inline-block w-10 bottom-0.5 h-2 bg-yellow-300"></span>
-                    <span class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl relative">Lebih Dekat Dengan Mari Wisata</span>
+                    <span class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl relative">Lebih
+                        Dekat Dengan Mari Wisata</span>
                 </span>
-                <p class="mt-6 text-base text-gray-600">Mari Wisata merupakan website yang menyediakan destinasi wisata yang menarik di daerah pulau jawa, terlebih di daerah Jawa Barat. Mari Wisata memberikan gambar wisata, lokasi wisata, grafik pengunjung dan total jumlah pengunjung disetiap destinasi wisata, sehingga para calon wisata memahami dan mengerti tempat wisata apa yang ingin mereka kunjungi.</p>
+                <p class="mt-6 text-left text-gray-600">Mari Wisata merupakan website yang menyediakan destinasi wisata
+                    yang menarik di daerah pulau jawa, terlebih di daerah Jawa Barat. Mari Wisata memberikan gambar
+                    wisata, lokasi wisata, grafik pengunjung dan total jumlah pengunjung disetiap destinasi wisata,
+                    sehingga para calon wisata memahami dan mengerti tempat wisata apa yang ingin mereka kunjungi.</p>
 
                 <a href="#" title=""
-                    class="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md mt-9 hover:bg-blue-700 focus:bg-blue-700"
+                    class="inline-flex items-start justify-start px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md mt-9 hover:bg-blue-700 focus:bg-blue-700"
                     role="button">Selengkapnya</a>
             </div>
         </div>
@@ -146,7 +145,7 @@
 <!-- Section Lebih Dekat End -->
 
 <!-- Section Download Start -->
-<section class="py-5 bg-white sm:py-16 lg:py-24">
+<section class="py-5 mb-16 bg-white sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="max-w-2xl mx-auto text-center">
             <svg class="mx-auto w-14 h-14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -154,8 +153,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                     d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
             </svg>
-            <h2 class="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Download Mari Wisata Apps</h2>
-            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Hanya perlu 10 menit untuk mengatur di perangkat apa pun, Ayo download sekarang.</p>
+            <h2 class="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Download Mari Wisata
+                Apps</h2>
+            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Hanya perlu 10 menit untuk mengatur
+                di perangkat apa pun, Ayo download sekarang.</p>
         </div>
 
         <div
@@ -184,12 +185,14 @@
 <!-- Section Download End -->
 
 <!-- Client Section Start -->
-<section id="#" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-300">
+<section id="#" class="pt-24 pb-24 bg-gray-50 dark:bg-slate-300">
     <div class="container">
         <div class="w-full px-4">
             <div class="mx-auto text-center mb-16">
                 <h2 class="font-bold text-secondary text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-                <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt reiciendis sequi voluptatibus laudantium similique eveniet quas in consectetur earum!</p>
+                <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Perspiciatis nesciunt reiciendis sequi voluptatibus laudantium
+                    similique eveniet quas in consectetur earum!</p>
             </div>
         </div>
         <div class="w-full px-4">
@@ -229,40 +232,61 @@
                     <img class="w-full shadow-xl rounded-lg" src="assets/img/AdminLTE-3-Dashboard.png" alt="" />
                 </div>
 
-                <div class="lg:order-1">
-                    <h2 class="text-3xl font-bold leading-tight text-secondary sm:text-4xl lg:text-5xl lg:leading-snug">Apakah kamu bersedia  <br class="hidden xl:block text-secondary" /> menjadi bagian dari Mari Wisata?</h2>
+                <div class="lg:order-1 ml-5 ">
+                    <h2 class="text-3xl font-bold leading-tight text-secondary sm:text-4xl lg:text-5xl lg:leading-snug">
+                        Apakah kamu bersedia <br class="hidden xl:block text-secondary" /> menjadi bagian dari Mari
+                        Wisata?</h2>
 
-                    <ul class="grid grid-cols-1 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
+                    <ul
+                        class="grid-flow-col gap-2 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
                         <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
                             </svg>
                             <span class="ml-3 font-medium text-secondary"> Referensi Wisata Bersama Keluarga </span>
                         </li>
 
                         <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
                             </svg>
                             <span class="ml-3 font-medium text-secondary"> Hidden Gem Wisata Di Jawa Barat </span>
                         </li>
 
                         <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
                             </svg>
                             <span class="ml-3 font-medium text-secondary"> Post, Edit & Customize </span>
                         </li>
                     </ul>
 
                     <div class="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12">
-                        
-                        <a href="#" title="" class="inline-flex items-center justify-center px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700" role="button">
-                            <svg class="w-6 h-6p mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+
+                        <a href="#" title=""
+                            class="inline-flex items-center justify-center px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700"
+                            role="button">
+                            <svg class="w-6 h-6p mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
                             Explore Now
                         </a>
 
-                        <a href="#" title="" class="inline-flex items-center justify-center px-4 py-4 mt-5 text-base font-semibold text-secondary transition-all duration-200 bg-transparent border border-secondary rounded-md sm:mt-0 hover:bg-secondary hover:text-black" role="button"> Join </a>
+                        <a href="#" title=""
+                            class="inline-flex items-center justify-center px-4 py-4 mt-5 text-base font-semibold text-secondary transition-all duration-200 bg-transparent border border-secondary rounded-md sm:mt-0 hover:bg-secondary hover:text-black"
+                            role="button"> Join </a>
                     </div>
                 </div>
             </div>

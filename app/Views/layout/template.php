@@ -7,7 +7,7 @@
     <title><?= $title; ?></title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Flowbite -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
@@ -22,7 +22,7 @@
     <?= $this->renderSection('content'); ?>
     <?= $this->include('layout/footer'); ?>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <!-- Flowbit -->
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>

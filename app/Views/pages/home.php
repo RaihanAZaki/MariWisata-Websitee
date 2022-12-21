@@ -23,7 +23,7 @@
                 <!-- logo mari wisata -->
                 <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                     Let's go Jabar</br>
-                    <span class="text-blue-500">Mari Wisata</span>
+                    <span class="text-primary">Mari Wisata</span>
                 </h2>
                 <p class="mt-4 text-base leading-relaxed text-gray-600 text-justify">Provinsi Jawa Barat secara
                     geografis terletak

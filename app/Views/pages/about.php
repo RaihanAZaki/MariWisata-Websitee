@@ -2,6 +2,7 @@
 
 <?= $this->section('content'); ?>
 
+
 <!-- Profile Section Start -->
 <section class="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -102,6 +103,8 @@
                     </div>
                 </div>
                 <!-- Main modal End -->
+
+
             </div>
 
             <div class="relative">

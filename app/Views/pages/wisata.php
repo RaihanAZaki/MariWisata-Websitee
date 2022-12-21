@@ -4,6 +4,7 @@
 
 
 <!-- Chart Section Start -->
+<!-- <section class="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16"> -->
 <section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="shadow-lg rounded-lg overflow-hidden">
@@ -56,7 +57,7 @@
             <div class="bg-gray-800 text-gray-500 rounded shadow-xl py-5 px-5 w-full lg:w-1/2" x-data="{chartData:chartData()}" x-init="chartData.fetch()">
                 <div class="flex flex-wrap items-end">
                     <div class="flex-1">
-                        <h3 class="text-lg font-semibold leading-tight">Total Pengunjung</h3>
+                        <h3 class="text-lg font-semibold leading-tight">Income</h3>
                     </div>
                     <div class="relative" @click.away="chartData.showDropdown=false">
                         <button class="text-xs hover:text-gray-300 h-6 focus:outline-none" @click="chartData.showDropdown=!chartData.showDropdown">
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap items-end mb-5">
-                    <h4 class="text-2xl lg:text-3xl text-white font-semibold leading-tight inline-block mr-2" x-text="'Jumlah '+(chartData.data?chartData.data[chartData.date].total.comma_formatter():0)">0</h4>
+                    <h4 class="text-2xl lg:text-3xl text-white font-semibold leading-tight inline-block mr-2" x-text="'$'+(chartData.data?chartData.data[chartData.date].total.comma_formatter():0)">0</h4>
                     <span class="inline-block" :class="chartData.data&&chartData.data[chartData.date].upDown<0?'text-red-500':'text-green-500'"><span x-text="chartData.data&&chartData.data[chartData.date].upDown<0?'▼':'▲'">0</span> <span x-text="chartData.data?chartData.data[chartData.date].upDown:0">0</span>%</span>
                 </div>
                 <div>

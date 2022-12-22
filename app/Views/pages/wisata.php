@@ -2,47 +2,183 @@
 
 <?= $this->section('content'); ?>
 
-
-<!-- Chart Section Start -->
-<!-- <section class="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16"> -->
-<section class="py-10 bg-white sm:py-16 lg:py-24">
+<!-- Search Bar Start -->
+<Section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="shadow-lg rounded-lg overflow-hidden">
-            <div class="py-3 px-5 bg-gray-50">Line chart</div>
-            <canvas class="p-10" id="chartLine"></canvas>
-        </div>
+        <form>
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Nama Wisata..." required>
+                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+            </div>
+        </form>
     </div>
+</Section>
+<!-- Search Bar Emd -->
 
-    <!-- Required chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Chart line -->
-    <script>
-        const labels = ["January", "February", "March", "April", "May", "June"];
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: "Data Mari Wisata",
-                backgroundColor: "hsl(252, 82.9%, 67.8%)",
-                borderColor: "hsl(252, 82.9%, 67.8%)",
-                data: [0, 10, 5, 2, 20, 30, 45],
-            }, ],
-        };
 
-        const configLineChart = {
-            type: "line",
-            data,
-            options: {},
-        };
+<!-- Table Start -->
+<section class="py-6 bg-white sm:pb-6 lg:pb-6">
+    <div class="overflow-x-auto relative shadow-md sm:rounded-lg max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="text-left py-6 sm:py-6 lg:py-6">
+            <span class="relative inline-block">
+                <span class="absolute inline-block w-10 bottom-0.5 h-2 bg-yellow-300"></span>
+                <span class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl relative">Table Data Mari Wisata</span>
+        </div>
 
-        var chartLine = new Chart(
-            document.getElementById("chartLine"),
-            configLineChart
-        );
-    </script>
+        <div class="overflow-x-auto relative">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Id
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Kode Provinsi
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Nama Provinsi
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Nama Kabupaten Kota
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Jenis Wisatawan
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Jumlah Pengunjung
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Satuan
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Tahun
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // $servername = "localhost";
+                    // $username = "root";
+                    // $password = "";
+                    // $database = "mari-wisata";
+
+                    // $connection = new mysqli($servername, $username, $password, $database);
+
+                    // if($connection->connect_error){
+                    //     die("Connection failed: " . $connection->connect_error);
+                    // }
+
+                    // $sql = "SELECT * FROM dispar";
+                    // $result = $connection->query($sql);
+
+                    // if (!$result) {
+                    //     die("Invalid query: " . $connection->connect_error);
+                    // }
+
+                    // read data
+                    // while($row = $result->fetch_assoc()) {
+
+
+
+                    // }   
+                    ?>
+
+
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="py-4 px-6">
+                            32
+                        </td>
+                        <td class="py-4 px-6">
+                            JAWA BARAT
+                        </td>
+                        <td class="py-4 px-6">
+                            KABUPATEN BOGOR
+                        </td>
+                        <td class="py-4 px-6">
+                            NUSANTARA
+                        </td>
+                        <td class="py-4 px-6">
+                            4075198
+                        </td>
+                        <td class="py-4 px-6">
+                            ORANG
+                        </td>
+                        <td class="py-4 px-6">
+                            2014
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td class="py-4 px-6">
+                            32
+                        </td>
+                        <td class="py-4 px-6">
+                            JAWA BARAT
+                        </td>
+                        <td class="py-4 px-6">
+                            KABUPATEN SUKABUMI
+                        </td>
+                        <td class="py-4 px-6">
+                            MANCANEGARA
+                        </td>
+                        <td class="py-4 px-6">
+                            49985
+                        </td>
+                        <td class="py-4 px-6">
+                            ORANG
+                        </td>
+                        <td class="py-4 px-6">
+                            2014
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Paganation -->
+        <nav aria-label="Page navigation" class="my-10">
+            <ul class="inline-flex -space-x-px">
+                <li>
+                    <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+                </li>
+                <li>
+                    <a href="#" aria-current="page" class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">1</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </section>
-<!-- Chart Section End -->
+<!-- Table End -->
 
+<!-- Chart Start -->
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
 
@@ -52,12 +188,12 @@
 </style>
 
 <section class="py-10 bg-white sm:py-16 lg:py-24">
-    <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
+    <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="min-w-min min-h-min bg-white flex items-center justify-center px-5 py-5">
             <div class="bg-gray-800 text-gray-500 rounded shadow-xl py-5 px-5 w-full lg:w-1/2" x-data="{chartData:chartData()}" x-init="chartData.fetch()">
                 <div class="flex flex-wrap items-end">
                     <div class="flex-1">
-                        <h3 class="text-lg font-semibold leading-tight">Income</h3>
+                        <h3 class="text-lg font-semibold leading-tight">Jumlah Pengunjung</h3>
                     </div>
                     <div class="relative" @click.away="chartData.showDropdown=false">
                         <button class="text-xs hover:text-gray-300 h-6 focus:outline-none" @click="chartData.showDropdown=!chartData.showDropdown">
@@ -78,7 +214,7 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap items-end mb-5">
-                    <h4 class="text-2xl lg:text-3xl text-white font-semibold leading-tight inline-block mr-2" x-text="'$'+(chartData.data?chartData.data[chartData.date].total.comma_formatter():0)">0</h4>
+                    <h4 class="text-2xl lg:text-3xl text-white font-semibold leading-tight inline-block mr-2" x-text="''+(chartData.data?chartData.data[chartData.date].total.comma_formatter():0)">0</h4>
                     <span class="inline-block" :class="chartData.data&&chartData.data[chartData.date].upDown<0?'text-red-500':'text-green-500'"><span x-text="chartData.data&&chartData.data[chartData.date].upDown<0?'▼':'▲'">0</span> <span x-text="chartData.data?chartData.data[chartData.date].upDown:0">0</span>%</span>
                 </div>
                 <div>
@@ -88,7 +224,6 @@
         </div>
     </div>
 </section>
-
 
 <script>
     Number.prototype.comma_formatter = function() {
@@ -155,14 +290,14 @@
                     data: {
                         labels: this.data[this.date].data.labels,
                         datasets: [{
-                                label: "Income",
+                                label: "Pendatang",
                                 backgroundColor: "rgba(102, 126, 234, 0.25)",
                                 borderColor: "rgba(102, 126, 234, 1)",
                                 pointBackgroundColor: "rgba(102, 126, 234, 1)",
                                 data: this.data[this.date].data.income,
                             },
                             {
-                                label: "Expenses",
+                                label: "Lokal",
                                 backgroundColor: "rgba(237, 100, 166, 0.25)",
                                 borderColor: "rgba(237, 100, 166, 1)",
                                 pointBackgroundColor: "rgba(237, 100, 166, 1)",
@@ -194,83 +329,6 @@
         }
     }
 </script>
-
-
-
-<!-- <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 sm:gap-x-12 gap-y-12">
-            <div class="lg:col-span-2">
-                <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">
-                    1 team.<br />
-                    6+ years.<br />
-                    300+ projects.<br />
-                </h2>
-                <p class="mt-6 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-
-            <div class="lg:col-span-3 xl:col-span-4">
-                <div class="grid items-center max-w-4xl grid-cols-2 mx-auto lg:grid-cols-4 gap-x-10 gap-y-16">
-                    <div>
-                        <img class="object-contain w-full h-6 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-1.png" alt="" />
-                    </div>
-
-                    <div>
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-2.png" alt="" />
-                    </div>
-
-                    <div>
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-3.png" alt="" />
-                    </div>
-
-                    <div>
-                        <img class="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-4.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-5.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-6.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-7.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-8.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-9.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-10.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png" alt="" />
-                    </div>
-
-                    <div class="hidden lg:block">
-                        <img class="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png" alt="" />
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-start mt-10 space-x-3 lg:hidden">
-                    <div class="w-2.5 h-2.5 rounded-full bg-blue-600 block"></div>
-                    <div class="w-2.5 h-2.5 rounded-full bg-gray-300 block"></div>
-                    <div class="w-2.5 h-2.5 rounded-full bg-gray-300 block"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-
-
+<!-- Chart End -->
 
 <?= $this->endSection(); ?>

@@ -106,6 +106,33 @@
                             KABUPATEN BOGOR
                         </td>
                         <td class="py-4 px-6">
+                            MANCANEGARA
+                        </td>
+                        <td class="py-4 px-6">
+                            54927
+                        </td>
+                        <td class="py-4 px-6">
+                            ORANG
+                        </td>
+                        <td class="py-4 px-6">
+                            2014
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td class="py-4 px-6">
+                            32
+                        </td>
+                        <td class="py-4 px-6">
+                            JAWA BARAT
+                        </td>
+                        <td class="py-4 px-6">
+                            KABUPATEN BOGOR
+                        </td>
+                        <td class="py-4 px-6">
                             NUSANTARA
                         </td>
                         <td class="py-4 px-6">
@@ -118,9 +145,10 @@
                             2014
                         </td>
                     </tr>
+
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            2
+                            3
                         </th>
                         <td class="py-4 px-6">
                             32
@@ -136,6 +164,60 @@
                         </td>
                         <td class="py-4 px-6">
                             49985
+                        </td>
+                        <td class="py-4 px-6">
+                            ORANG
+                        </td>
+                        <td class="py-4 px-6">
+                            2014
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            4
+                        </th>
+                        <td class="py-4 px-6">
+                            32
+                        </td>
+                        <td class="py-4 px-6">
+                            JAWA BARAT
+                        </td>
+                        <td class="py-4 px-6">
+                            KABUPATEN SUKABUMI
+                        </td>
+                        <td class="py-4 px-6">
+                            NUSANTARA
+                        </td>
+                        <td class="py-4 px-6">
+                            2031979
+                        </td>
+                        <td class="py-4 px-6">
+                            ORANG
+                        </td>
+                        <td class="py-4 px-6">
+                            2014
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            5
+                        </th>
+                        <td class="py-4 px-6">
+                            32
+                        </td>
+                        <td class="py-4 px-6">
+                            JAWA BARAT
+                        </td>
+                        <td class="py-4 px-6">
+                            KABUPATEN CIANJUR
+                        </td>
+                        <td class="py-4 px-6">
+                            MANCANEGARA
+                        </td>
+                        <td class="py-4 px-6">
+                            7824
                         </td>
                         <td class="py-4 px-6">
                             ORANG
